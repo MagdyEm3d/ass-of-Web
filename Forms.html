@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form-login </title>
+  <link rel="stylesheet" href="Forms.css">
+  
+</head>
+<body>
+
+<div class="container">
+  <h2>Signup Form</h2>
+  <form id="signupForm">
+    <label for="username">Username (5-10 characters):</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password (strong and >8 characters):</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="age">Age (18-60):</label>
+    <input type="number" id="age" name="age" required>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+
+    <label for="phoneNumber">Phone Number (11 digits):</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+    <div class="error-message" id="errorMessage"></div>
+
+    <button id="bton1"  type="button" onclick="validateForm()">Signup</button>
+  </form>
+</div>
+<hr>
+<hr>
+<br>
+<div class="container">
+    <h2>Login Form</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="usernamee" name="username" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="passwordd" name="password" required>
+  
+      
+  
+      <button type="button" onclick="CheckLogin()">Login</button>
+    </form>
+  </div>
+  <hr>
+  <hr>
+  <br>
+  <div class="container">
+    <h2>Forgot Password</h2>
+    <form id="forgotPasswordForm">
+      <label for="username">Enter your username:</label>
+      <input type="text" id="usernameeeee" name="username" required>
+
+      <label for="forgitpassword">Enter your password:</label>
+        <input type="text" name="forgitpassword" id="forgitpassword">
+      
+      
+  
+      <button type="button" onclick="update()">Update</button>
+    </form>
+  </div>
+  
+</body>
+<script src="Forms.js"></script>
+</html>
+
+

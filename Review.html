@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+</head>
+<style>
+   
+</style>
+<body>
+    <center>
+        <table border="3">
+            <caption>Review</caption>
+            <thead>
+                <tr>
+                    <th>Question</th>  
+                    <th>Answer1</th>     
+                    <th>Answer2</th>             
+                </tr>
+            </thead>
+            <tbody>>
+                <tr>
+                    <td>Are you satisfied with the application?</td>
+                    <td><input type="radio" value="yes" name="quistion1">yes
+                        </td>
+                    <td><input type="radio" value="no" name="quistion1">no</td>
+                </tr>
+                <tr>
+                    <td>Will you reuse the app??</td>
+                    <td><input type="radio" value="yes" name="quistion2">yes</td>
+                    <td><input type="radio" value="no" name="quistion2">no</td>
+                </tr>
+                <tr>
+                    <td>thia app meet your target?</td>
+                    <td><input type="radio" value="yes" name="quistion3">yes</td>
+                    <td><input type="radio" value="no" name="quistion3">no</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <button aria-colspan="2" onclick="count_yes_and_no()">submit</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </center>
+
+
+    <!-- <script>
+        function count_yes_and_no()
+         {
+             let counter_for_yes = 0;
+             let counter_for_no = 0;
+             let all_radios = document.querySelectorAll("input");
+             for(let i=0 ; i<all_radios.length ; i++)
+             {
+                 if(all_radios[i].checked && all_radios[i].value == "yes")
+                 {
+                     counter_for_yes++;
+                 }
+                 else if(all_radios[i].checked && all_radios[i].value == "no")
+                 {
+                     counter_for_no++;
+                 }
+             }
+             alert(`Yes = ${counter_for_yes} No = ${counter_for_no}` );
+         }
+     </script>
+     -->
+</body>
+<script src="reviw.js"></script>
+</html>
